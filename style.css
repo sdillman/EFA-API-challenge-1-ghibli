@@ -1,0 +1,12 @@
+.results {
+    flex: 1;
+    padding: 10px;
+}
+
+form p:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.clearfix {
+    clear: both;
+}
