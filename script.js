@@ -49,10 +49,12 @@ const posters = {
     "d868e6ec-c44a-405b-8fa6-f7f0f8cfb500": "https://www.ghibli.jp/images/red-turtle.jpg?20201218"
 }
 
-searchForm.addEventListener('submit', fetchResults);
+fetchResults();
 
-function fetchResults(e) {
-    e.preventDefault();
+// searchForm.addEventListener('submit', fetchResults);
+
+function fetchResults() {
+    // e.preventDefault();
 
     url = baseURL;
 
@@ -76,16 +78,19 @@ function displayResults(json) {
         console.log("No results");
     } else {
         for (let i = 0; i < films.length; i++) {
+            let current = films[i];
+            console.log("Current:", current);
+
             let card = document.createElement('article');
+            card.classList.add('card', 'col-md-4');
             let title = document.createElement('h2');
+            title.classList.add('text-center')
             let director = document.createElement('h3');
             let img = document.createElement('img');
+            img.setAttribute('alt', `poster image for ${current.title}`);
             let description = document.createElement('p');
             let clearfix = document.createElement('div');
             let cardEnd = document.createElement('br');
-
-            let current = films[i];
-            console.log("Current:", current);
 
             title.textContent = current.title;
             director.textContent = `Directed by: ${current.director}`;

@@ -1,6 +1,9 @@
+body {
+    background-color: #6ccd30;
+}
+
 .results {
     flex: 1;
-    padding: 10px;
 }
 
 form p:nth-of-type(1) {
@@ -9,4 +12,29 @@ form p:nth-of-type(1) {
 
 .clearfix {
     clear: both;
+}
+
+header {
+    background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color:#4330cd;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 0.75rem;
+    font-style:italic;
+}
+
+img {
+    max-height: 566px;
+    max-width: 400px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 10px;
 }
