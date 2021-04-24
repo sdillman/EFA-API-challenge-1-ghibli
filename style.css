@@ -1,5 +1,5 @@
 body {
-    background-color: #6ccd30;
+    background-color: #79B82E;
 }
 
 .results {
@@ -17,21 +17,38 @@ form p:nth-of-type(1) {
 header {
     background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    color:#4330cd;
+    color:#2e34b8;
+}
+
+h1 h2 h3 {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
     font-size: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 1rem;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0.5rem;
 }
 
 h3 {
     font-size: 0.75rem;
+    font-family: 'Nunito Sans', sans-serif;
     font-style:italic;
 }
 
 img {
     max-height: 566px;
     max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
 }
 
 .card {
